@@ -1,0 +1,68 @@
+﻿@page "/"
+@*@using Syncfusion.Blazor.Data*@
+
+    <div id="wrapper">
+        @*Add ShowCheckBox="true" CheckBoxPosition="CheckBoxPosition.Right" in below code to enable and position the checkbox*@
+        <SfListView DataSource="@CarList" ShowHeader="true" HeaderTitle="Car Models">
+            <ListViewFieldSettings Text="Name" Id="CarID" Child="NestedData"></ListViewFieldSettings>
+            @*<SfDataManager Url="https://services.odata.org/V4/Northwind/Northwind.svc/"
+            Adaptor="Syncfusion.Blazor.Adaptors.ODataV4Adaptor"></SfDataManager>*@
+        </SfListView>
+    </div>
+
+@code{
+
+    List<CarModel> CarList = new List<CarModel>
+    {
+        new CarModel { Name = "Bugatti", CarID="parent01",
+            NestedData = new List<CarModel>
+            {
+                new CarModel { Name = "Chiron Sport 110 Ans Bugatti", CarID= "list-01"},
+                new CarModel { Name = "Chiron Super Sport 300+", CarID = "list-02"},
+                new CarModel { Name = "Bugatti Divo", CarID = "list-03" },
+            }
+        },
+        new CarModel { Name = "Audi A4", CarID = "9bda"},
+        new CarModel { Name = "BMW 502", CarID = "7aff" },
+        new CarModel { Name = "Audi A5", CarID = "9bdb" },
+        new CarModel { Name = "BMW 503", CarID = "b1da" },
+        new CarModel { Name = "Audi A6", CarID = "4589" },
+        new CarModel { Name = "BMW 501", CarID = "f849" }
+    };
+
+    public class CarModel
+    {
+        public string CarID { get; set; }
+        public string Name { get; set; }
+        public List<CarModel> NestedData { get; set; }
+    }
+
+    // #1 Uncomment below data for Array data binding and add DataSource = "CarModelData" in SfListView tag
+    //string[] CarModelData = new string[] {"Audi A4", "Chiron Sport 110 Ans Bugatti", "Audi A5",
+    //                "Chiron Super Sport 300+", "Bugatti Divo", "BMW 501", "Audi A6", "BMW 503" };
+
+    // #3 Uncomment below code for Remote data Binding
+    // Step 1: Add TValue="ProductData" Query="@query" and remove DataSource property in SfListView tag
+    // Step 2: Uncomment SfDataManager tag and namespace Syncfusion.Blazor.Data
+    // Step 3: Change the Text="ProductName" Id="ProductID" in ListViewFieldSettings tag
+    //public static List<string> ProductDetails = new List<string>()
+    //{
+    //    "ProductID", "ProductName"
+    //};
+
+    //Query query = new Query().From("Products").Select(ProductDetails).Take(6);
+
+    //public class ProductData
+    //{
+    //    public string ProductID { get; set; }
+    //    public string ProductName { get; set; }
+    //}
+}
+
+<style>
+    #wrapper{
+        border: 1px solid #dddddd;
+        width: 50%;
+        margin: auto;
+    }
+</style>
