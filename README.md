@@ -54,7 +54,7 @@ Arrange the list item content with multiline text, icons, and avatars.
 
 [Community Forums](https://www.syncfusion.com/forums/blazor-components?utm_source=github&utm_medium=listing&utm_campaign=blazor-lists-github-samples)
 
-[Suggest a feature or report a bug](https://www.syncfusion.com/feedback/blazor-components?utm_source=github&utm_medium=listing&utm_campaign=winforms-lists-github-samples)
+[Suggest a feature or report a bug](https://www.syncfusion.com/feedback/blazor-components?utm_source=github&utm_medium=listing&utm_campaign=blazor-lists-github-samples)
 
 [Online examples](https://blazor.syncfusion.com/demos/listview/default-functionalities?utm_source=github&utm_medium=listing&utm_campaign=blazor-lists-github-samples)
 
