@@ -1,10 +1,10 @@
  # Create Blazor ListView In Blazor Webassembly App
 
-The [Blazor ListView](https://www.syncfusion.com/blazor-components/blazor-listview?utm_source=github&utm_medium=listing&utm_campaign=blazor-lists-github-samples) is a list-like interface that allows you to select an item or multiple items. A quick start Blazor WebAssembly app that allows you to configure the Blazor ListView component from Syncfusion with its available options. This project contains simple code customizations, as well as some important features like how to bind different types of data, group list items, add checkboxes to a list, and add nested list items.
+The [Blazor ListView](https://www.syncfusion.com/blazor-components/blazor-listview?utm_source=github&utm_medium=listing&utm_campaign=blazor-listview-github-samples) is a list-like interface that allows you to select an item or multiple items. A quick start Blazor WebAssembly app that allows you to configure the Blazor ListView component from Syncfusion with its available options. This project contains simple code customizations, as well as some important features like how to bind different types of data, group list items, add checkboxes to a list, and add nested list items.
 
 ## Project prerequisites
 
-@ -12,3 +9,64 @@ Make sure that you have the compatible versions of Visual Studio 2019 and .NET C
+@ -12,3 +9,64 @@ Make sure that you have the compatible versions of Visual Studio 2019 and .NET Core SDK 3.1.3 in your machine before starting to work on this project.
 
 ## How to run this application?
 
