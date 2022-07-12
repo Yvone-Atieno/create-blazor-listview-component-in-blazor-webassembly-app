@@ -26,6 +26,8 @@ The Blazor ListView represents a nested data object structure in a list of listv
 
 ### Selection
 
+The ListBox provides support to select an item or a group of item by mouse or keyboard action.
+
 ## Single selection
 
 When a user clicks or taps an item, Blazor ListView enables the selection of the list item by default.
